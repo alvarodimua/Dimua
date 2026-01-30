@@ -1,0 +1,17 @@
+/* Estilos base de la web de DIMUÁ */
+
+body {
+  background-color: #f5f0e8;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
