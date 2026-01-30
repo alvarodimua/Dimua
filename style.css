@@ -146,3 +146,53 @@ footer {
     height: 90px;
   }
 }
+/* =========================
+   CINTA VINTAGE
+========================= */
+
+.tape {
+  height: 85vh;
+  background-color: #dcdcdc; /* un poco más oscuro que el body */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* pista que se mueve */
+.tape-track {
+  display: flex;
+  gap: 80px;
+  animation: tape-move 60s linear infinite;
+}
+
+/* imágenes */
+.tape-track img {
+  height: 75vh;
+  width: auto;
+  object-fit: cover;
+  filter: contrast(1.05) saturate(0.95);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* animación */
+@keyframes tape-move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .tape {
+    height: 70vh;
+  }
+
+  .tape-track img {
+    height: 60vh;
+  }
+}
+
