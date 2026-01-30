@@ -1,17 +1,74 @@
-/* Estilos base de la web de DIMUÁ */
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* ESTILO GENERAL */
 body {
-  background-color: #f5f0e8;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4efe7;
+  color: #111;
   text-align: center;
-  padding-top: 100px;
+  line-height: 1.6;
 }
 
-h1 {
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
   font-size: 4rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 
-p {
+.subtitle {
+  margin-top: 10px;
   font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+/* SECCIONES */
+section {
+  padding: 80px 20px;
+}
+
+/* MÚSICA */
+.music h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.player {
+  border: 1px solid #111;
+  padding: 40px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* BIO */
+.bio {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
 }
