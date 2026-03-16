@@ -58,7 +58,6 @@ text-align:center;
 .logo{
 
 font-family:'VT323', monospace;
-
 font-size:48px;
 
 letter-spacing:4px;
@@ -68,6 +67,9 @@ color:#c9f048;
 text-shadow:
 0 0 10px #c9f048,
 0 0 30px rgba(201,240,72,0.7);
+
+/* evita que se rompa la palabra */
+white-space: nowrap;
 
 }
 
